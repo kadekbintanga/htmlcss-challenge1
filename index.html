@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="source/mycss/mycss.css">
     <title>Challenge 1</title>
 </head>
-<body>
+<body class="custom-template">
     <div class="my-flexbox mt-3">
         <div class="custom-card" style="width: 18rem;">
             <img src="./source/image/Card1.jfif" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Top Winter Location</h5>
-                <a href="#"><p class="sub-title">More than 200 location</p></a>
+                <p class="sub-title">More than 200 location</p>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Nam minima, corrupti consequatur corporis numquam eveniet vel iure laboriosam
                     dolorum sed quae quibusdam at necessitatibus impedit ipsum similique sapiente alias modi?</p>
@@ -26,37 +26,34 @@
         <div class="custom-card" style="width: 18rem;">
             <img src="./source/image/Card2.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Top Winter Location</h5>
-                <a href="#"><p class="sub-title">More than 200 location</p></a>
+                <h5 class="card-title">Top Eastern Road Trip</h5>
+                <a href="#"><p class="sub-title">2,000 miles of wonder</p></a>
                 <a class="mr-3" href="#">SHARE</a>
-                <a type="button" data-toggle="modal" data-target="#detailCard1" href="#">EXPLORE</a>
+                <a type="button" data-toggle="modal" data-target="#detailCard2" href="#">EXPLORE</a>
                 <img class="component-right" src="./source/image/icon/chevron-down.svg" alt="" style="margin-top: 5px;">
             </div>
         </div>
-        <div class="custom-card" style="width: 18rem;">
-            <img src="./source/image/Card1.jfif" class="card-img-top" alt="...">
+        <div class="custom-card custom-border-radius" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Top Winter Location</h5>
-                <a href="#"><p class="sub-title">More than 200 location</p></a>
+                <img src="./source/image/maks.jpeg" width="20%" class="photo-custom rounded-circle" alt="">
+                <p><b>Max</b></p>
+                <p style="margin-top: -15px;">20 mins. ago</p>
+            </div>
+                <img src="./source/image/Card3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="content-title">Kangoro Valley Safari</h5>
+                <a href="#"><p class="sub-title">Free on Thursdays</p></a>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam minima, corrupti consequatur corporis numquam eveniet vel iure laboriosam
-                    dolorum sed quae quibusdam at necessitatibus impedit ipsum similique sapiente alias modi?</p>
-                <a class="mr-3" href="#">SHARE</a>
-                <a type="button" data-toggle="modal" data-target="#detailCard1" href="#">EXPLORE</a>
-                <img class="component-right" src="./source/image/icon/chevron-down.svg" alt="" style="margin-top: 5px;">
+                    Ea labore impedit tenetur fugiat alias odio, eligendi explicabo at eos neque, 
+                    aperiam eius velit dignissimos est delectus magni perferendis saepe. Vel?</p>
             </div>
         </div>
         <div class="custom-card" style="width: 18rem;">
-            <img src="./source/image/Card1.jfif" class="card-img-top" alt="...">
+            <img src="./source/image/Card2.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Top Winter Location</h5>
-                <a href="#"><p class="sub-title">More than 200 location</p></a>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam minima, corrupti consequatur corporis numquam eveniet vel iure laboriosam
-                    dolorum sed quae quibusdam at necessitatibus impedit ipsum similique sapiente alias modi?</p>
-                <a class="mr-3" href="#">SHARE</a>
-                <a type="button" data-toggle="modal" data-target="#detailCard1" href="#">EXPLORE</a>
-                <img class="component-right" src="./source/image/icon/chevron-down.svg" alt="" style="margin-top: 5px;">
+                <img class="component-right ml-3" src="./source/image/icon/geo-alt.svg" alt="">
+                <img class="component-right ml-3" src="./source/image/icon/bookmark-fill.svg" alt="">
+                <img class="component-right ml-3" src="./source/image/icon/heart-fill.svg" alt="">
             </div>
         </div>
     </div>
@@ -68,25 +65,53 @@
 </body>
 <div class="modal fade" id="detailCard1" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true" ng-repeat="x in data">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-info">
-          <div class="col-md-12 text-center">
-            <h5 class="modal-title" id="detailModalLabel">{{x.title}}</h5>
-          </div>
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <div class="col-md-12 text-center">
+                    <h5 class="modal-title" id="detailModalLabel">Top Winter Location</h5>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 text-center" style="margin-top: -25px;">
+                    <img src="./source/image/Card1.jfif" style="width: 100%; border-radius: 10px;" alt="">
+                </div>
+                <div class="col-md-12 mt-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis voluptatibus adipisci a eaque delectus, consequuntur 
+                    laudantium nulla commodi, tenetur, tempora officiis voluptatem 
+                    facilis optio soluta fugit accusamus numquam quae quibusdam.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-body">
-          <div class="col-md-12 text-center" style="margin-top: -25px;">
-            <img src="{{x.photo}}" style="width: 100%; border-radius: 10px;" alt="">
-          </div>
-          <div class="col-md-12 mt-3">
-            <p>{{x.decsfull}}</p>
-            <a href="{{x.loc}}" target="_blank">Get the location</a>
-          </div>
+    </div>
+</div>
+
+<div class="modal fade" id="detailCard2" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true" ng-repeat="x in data">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <div class="col-md-12 text-center">
+                    <h5 class="modal-title" id="detailModalLabel">Top Winter Location</h5>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 text-center" style="margin-top: -25px;">
+                    <img src="./source/image/Card2.jpeg" style="width: 100%; border-radius: 10px;" alt="">
+                </div>
+                <div class="col-md-12 mt-3">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Deserunt perspiciatis enim reiciendis quia molestiae ut,
+                        dolor inventore esse delectus dolore nesciunt, doloremque exercitationem 
+                        maiores quam tempora labore culpa cum vel.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
 </div>
 </html>
