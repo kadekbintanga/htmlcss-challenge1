@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/css/bootstrap.css">
+    <link rel="stylesheet" href="source/mycss/mycss.css">
+    <title>Challenge 1</title>
+</head>
+<body>
+    <div class="my-flexbox mt-3">
+        <div class="custom-card" style="width: 18rem;">
+            <img src="./source/image/Card1.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Top Winter Location</h5>
+                <a href="#"><p class="sub-title">More than 200 location</p></a>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nam minima, corrupti consequatur corporis numquam eveniet vel iure laboriosam
+                    dolorum sed quae quibusdam at necessitatibus impedit ipsum similique sapiente alias modi?</p>
+                <a class="mr-3" href="#">SHARE</a>
+                <a type="button" data-toggle="modal" data-target="#detailCard1" href="#">EXPLORE</a>
+                <img class="component-right" src="./source/image/icon/chevron-down.svg" alt="" style="margin-top: 5px;">
+            </div>
+        </div>
+        <div class="custom-card" style="width: 18rem;">
+            <img src="./source/image/Card2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Top Winter Location</h5>
+                <a href="#"><p class="sub-title">More than 200 location</p></a>
+                <a class="mr-3" href="#">SHARE</a>
+                <a type="button" data-toggle="modal" data-target="#detailCard1" href="#">EXPLORE</a>
+                <img class="component-right" src="./source/image/icon/chevron-down.svg" alt="" style="margin-top: 5px;">
+            </div>
+        </div>
+        <div class="custom-card" style="width: 18rem;">
+            <img src="./source/image/Card1.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Top Winter Location</h5>
+                <a href="#"><p class="sub-title">More than 200 location</p></a>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nam minima, corrupti consequatur corporis numquam eveniet vel iure laboriosam
+                    dolorum sed quae quibusdam at necessitatibus impedit ipsum similique sapiente alias modi?</p>
+                <a class="mr-3" href="#">SHARE</a>
+                <a type="button" data-toggle="modal" data-target="#detailCard1" href="#">EXPLORE</a>
+                <img class="component-right" src="./source/image/icon/chevron-down.svg" alt="" style="margin-top: 5px;">
+            </div>
+        </div>
+        <div class="custom-card" style="width: 18rem;">
+            <img src="./source/image/Card1.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Top Winter Location</h5>
+                <a href="#"><p class="sub-title">More than 200 location</p></a>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nam minima, corrupti consequatur corporis numquam eveniet vel iure laboriosam
+                    dolorum sed quae quibusdam at necessitatibus impedit ipsum similique sapiente alias modi?</p>
+                <a class="mr-3" href="#">SHARE</a>
+                <a type="button" data-toggle="modal" data-target="#detailCard1" href="#">EXPLORE</a>
+                <img class="component-right" src="./source/image/icon/chevron-down.svg" alt="" style="margin-top: 5px;">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="source/js/bootstrap.js"></script>
+</body>
+<div class="modal fade" id="detailCard1" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true" ng-repeat="x in data">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <div class="col-md-12 text-center">
+            <h5 class="modal-title" id="detailModalLabel">{{x.title}}</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12 text-center" style="margin-top: -25px;">
+            <img src="{{x.photo}}" style="width: 100%; border-radius: 10px;" alt="">
+          </div>
+          <div class="col-md-12 mt-3">
+            <p>{{x.decsfull}}</p>
+            <a href="{{x.loc}}" target="_blank">Get the location</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+</html>
